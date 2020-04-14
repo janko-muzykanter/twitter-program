@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+  margin: 0;
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+.twitter-app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  box-shadow: 0 0 20px #abb6bd;
+}
+
+.twitter-headline {
+  background-size: cover;
+
+  display: flex;
+  flex-shrink: 0;
+  position: relative;
+  height: 200px;
+  width: 100%;
+}
+
+.twitter-container {
+  display: flex;
+  flex-grow: 0;
+  flex-direction: column;
+  
+  overflow: auto;
+}
+
+.twitter-widget {
+  display: flex;
+  margin: 10px;
+  //background-color: grey;
+  border: 1px solid rgb(230, 236, 240);
+  padding: 5px;
+}
+
+.twitter-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-left: 5px;
+}
+
+.twitter-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.twitter-name {
+  color: rgb(101, 119, 134);
+}
+
+.twitter-data {
+  color: rgb(101, 119, 134);
+}
+
+.twitter-text {
+  margin-top: 10px;
+}
+
+.twitter-input {
+  width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+  padding: 4px;
+}
+
+.twitter-search {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  width: 200px;
+  padding: 3px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: yellow;
+  z-index: 100;
+}
+
+.Spinner {
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  background-color: gray;
+  opacity: .4;
+  animation-name: spin_opacity;
+  animation-duration: 1s;
+}
+
+@keyframes spin_opacity {
+  0% { opacity: 0; }
+  50% { opacity: 0; }
+  100% { opacity: .4; }
+}
+
+.twitter-blur {
+  filter: blur(5px);
+}
+
